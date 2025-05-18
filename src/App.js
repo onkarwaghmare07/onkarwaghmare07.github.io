@@ -11,8 +11,13 @@ import Experience from './components/Experience';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = "Onkar Waghmare - Portfolio";
+  }, []);
+
   return (
     <div className="App">
       <Navbar />

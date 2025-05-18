@@ -2,6 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { portfolioData } from '../assets/data/portfolioData';
 import resumeFile from '../assets/resume/WAGHMARE_ONKAR.pdf'; // Make sure the filename matches exactly
+import profileImage from '../assets/images/onkar new.jpg'; // Import the image correctly
 
 const Header = () => {
      const handleResumeClick = () => {
@@ -68,7 +69,7 @@ const Header = () => {
                          <div className="header-image">
                               <div className="image-container">
                                    <img
-                                        src="/images/onkar new.jpg"
+                                        src={profileImage} // Use the imported image here
                                         alt={portfolioData.name}
                                         className="profile-image"
                                    />
